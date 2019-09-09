@@ -1,0 +1,30 @@
+<div class="pit-navbar">
+  <nav class="navbar navbar-expand-md ">
+    <a [routerLink]="['/']" class="navbar-brand pit-navbar__brand">
+      <img class="pit-navbar__brand-image" src="assets/img/logo.png" alt="Pitcon 2019 Logo">
+      &nbsp; PIT<span class="success">CON</span> 2019
+    </a>
+    <button class="pit-navbar__toggle navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a [routerLink]="['/speakers']" routerLinkActive="success"
+          class="nav-item nav-link pit-navbar__nav-item">Speakers</a>
+        <a [routerLink]="['/sessions']" routerLinkActive="success"
+          class="nav-item nav-link pit-navbar__nav-item">Sessions</a>
+        <a [routerLink]="['/team']" routerLinkActive="success" class="nav-item nav-link pit-navbar__nav-item">Meet the
+          team</a>
+        <a [routerLink]="['/about']" routerLinkActive="success" class="nav-item nav-link pit-navbar__nav-item">About the
+          event</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScT120pXixoqTtrbnTUO6hHMCVjkltwHfiro86A3Z5xOK5Yfg/viewform"
+          target="_blank" class="nav-item nav-link pit-navbar__buy-ticket btn btn-danger">
+          Buy Tickets
+        </a>
+
+      </div>
+    </div>
+  </nav>
+</div>
