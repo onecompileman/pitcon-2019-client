@@ -1,0 +1,22 @@
+@import '~src/assets/scss/theme-config';
+
+.faq-item {
+  margin-top: 10px;
+  border-radius: 0 !important;
+  box-shadow: 5px 5px $dark;
+}
+
+.faq-item .panel-heading {
+  border-radius: 0 !important;
+  background-color: $danger;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item .btn {
+  color: $light !important;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: none;
+}

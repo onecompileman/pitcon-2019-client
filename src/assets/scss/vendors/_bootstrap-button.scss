@@ -1,0 +1,17 @@
+@import '~src/assets/scss/theme-config';
+
+.btn {
+  border-radius: 0 !important;
+  border: none;
+  box-shadow: 3px 3px $dark;
+}
+
+.btn-danger {
+  background-color: $danger;
+  color: $light !important;
+}
+
+.btn-primary {
+  background-color: $primary;
+  color: $dark !important;
+}

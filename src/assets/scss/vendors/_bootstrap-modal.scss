@@ -1,0 +1,22 @@
+@import '~src/assets/scss/theme-config';
+
+.modal-content {
+  background-color: $danger;
+  box-shadow: 5px 5px $dark;
+  border-radius: 0;
+  color: $light;
+}
+
+.modal-open {
+  padding-right: 0px !important;
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  width: 100%;
+}
