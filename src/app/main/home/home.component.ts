@@ -23,7 +23,8 @@ export class HomeComponent implements OnInit {
     this.countdown$ = interval(1000).pipe(
       map(() => this.getCountdown())
     );
-    this.randomSpeaker = Speakers[Math.ceil(Math.random() * Speakers.length)];
+    const randVal = Math.floor(Math.random() * Speakers.length);
+    this.randomSpeaker = Speakers[randVal];
   }
 
   private getCountdown(): Countdown {
