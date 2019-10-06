@@ -254,6 +254,9 @@
     height: auto;
     box-shadow: 3px 3px 4px $dark;
     margin: 8px;
+    background-color: $light;
+    text-align: center;
+    font-weight: bold;
   }
 
   &__sponsors-block-header {
