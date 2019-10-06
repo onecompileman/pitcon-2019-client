@@ -5,6 +5,8 @@
   box-shadow: 5px 5px $dark;
   border-radius: 0;
   color: $light;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .modal-open {
@@ -12,11 +14,11 @@
 }
 
 .modal {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+  z-index: 99999;
 }
 
 .modal-dialog {
-  width: 100%;
+  width: 100% !important;
+  padding-top: 50px;
+  max-width: 800px !important;
 }
