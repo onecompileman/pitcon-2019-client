@@ -4,6 +4,7 @@ export const Speakers: Speaker[] = [
     {
         id: 1,
         name: 'Stephen Vinuya',
+        imageUrl: 'assets/img/speakers/stephen.jpg',
         about: `Stephen is a team lead at FFUF Manila, speaker, blogger, Microsoft MVP for developer’s technology from
           2018.He likes to share his knowledge in many areas such as Angular, HTML5 Game development, Laravel,
           Javascript, p5.js and Restful Apis. Aside from coding he is also a big fan of anime, that’s why he
@@ -18,9 +19,9 @@ export const Speakers: Speaker[] = [
     {
         id: 2,
         name: 'John Tugare',
+        imageUrl: 'assets/img/speakers/john.jpg',
         about: null,
-        jobTitle: `Founder, Information Technology Master’s Guild,<br>
-                   Rainmaker Region 1, Department of Information and Communications Technology`,
+        jobTitle: `CEO, Dragon Scale Web Development Services`,
         aboutJob: `<h4>About the DICT Rainmaker:</h4>
          <p>The DICT Rainmakers are defined by the Department of Information and Communications Technology
          as an integral ingredient to the growth of the local innovation communities.</p>
@@ -31,6 +32,7 @@ export const Speakers: Speaker[] = [
     {
         id: 3,
         name: 'Nico Angelo Saberon',
+        imageUrl: 'assets/img/speakers/nico.jpg',
         about: `Nico is a senior 3D Artist in Toei Animation. He is responsible for creating models, textures,
          and background artwork for animated shows. He is one of the very talented people behind the internationally
           popular anime One Piece, Dragon Ball, Saint Seiya and many more.`,
@@ -43,6 +45,7 @@ export const Speakers: Speaker[] = [
     {
         id: 4,
         name: 'Toni-Jan Keith Monserratn',
+        imageUrl: 'assets/img/speakers/toni.jpg',
         about: `<p>Toni-Jan is a very popular speaker for web technologies in the Philippines. He is a researcher who
         focuses on Human-Computer Interaction field, working on research in Pedagogy and Technology in Interactive Platforms
         on Learning. His love for speed and performance as part of the design makes him love his mission to help others do
@@ -67,6 +70,7 @@ export const Speakers: Speaker[] = [
     {
         id: 5,
         name: 'Robert “Bob” Reyes',
+        imageUrl: 'assets/img/speakers/robert.jpg',
         about: null,
         jobTitle: `Tech Speaker & Representative, Mozilla Philippines`,
         aboutJob: `<h4>About Mozilla and the Open Web: </h4>
@@ -76,7 +80,8 @@ export const Speakers: Speaker[] = [
     },
     {
         id: 6,
-        name: 'Franz Caballero	(ISC)2 SSCP | SEC+ | ITF+ | PAN-ACE | TMSFA | TMSE',
+        name: 'Franz Caballero<br><i style="font-size: 12px;">(ISC)2 SSCP | SEC+ | ITF+ | PAN-ACE | TMSFA | TMSE</i>',
+        imageUrl: 'assets/img/speakers/franz.jpg',
         about: `<p>Franz is a certified ethical hacker based in Singapore with the following certifications:</p>
                 <ul>
                     <li>EC-Council Certified Hacker (CEH)</li>
