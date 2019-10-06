@@ -116,29 +116,26 @@
     <div class="pit-home__speaker-profile">
       <div class="pit-home__speaker-profile-wrapper">
         <div class="pit-home__speaker-picture-container">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-home__speaker-profile-picture">
+          <img [src]="randomSpeaker.imageUrl" [alt]="randomSpeaker.name" class="pit-home__speaker-profile-picture">
         </div>
-        <span class="pit-home__speaker-name">
-          Stephen Vinuya
+        <span class="pit-home__speaker-name" [innerHTML]="randomSpeaker.name | safeHtml">
         </span>
+        <div class="pit-home__speaker-job-title" [innerHTML]="randomSpeaker.jobTitle">
+        </div>
         <p>
-          <a href="https://www.linkedin.com/in/stephen-vinuya-54441b106/" target="_blank"><i class="fab fa-linkedin"
+          <!-- <a href="https://www.linkedin.com/in/stephen-vinuya-54441b106/" target="_blank"><i class="fab fa-linkedin"
               style="color: #f0f0f0;"></i></a>&nbsp;
           <a href="https://facebook.com/stephen.vinuya" target="_blank"><i class="fab fa-facebook-square"
-              style="color: #f0f0f0;"></i></a>&nbsp;
+              style="color: #f0f0f0;"></i></a>&nbsp; -->
         </p>
       </div>
 
       <div class="pit-home__speaker-picture-caption">
-        <span class="pit-home__speaker-job-title">
-          Team Lead at FFUF Manila
-        </span>
-        <p class="pit-home__speaker-bio">
-          Stephen is a team lead at FFUF Manila, speaker, blogger, Microsoft MVP for developer’s technology from
-          2018.He likes to share his knowledge in many areas such as Angular, HTML5 Game development, Laravel,
-          Javascript, p5.js and Restful Apis. Aside from coding he is also a big fan of anime, that’s why he
-          calls
-          himself as “onecompileman”, reference from onepunchman.
+
+        <p class="pit-home__speaker-bio" *ngIf="randomSpeaker.aboutJob" [innerHTML]="randomSpeaker.aboutJob">
+        </p>
+        <p class="pit-home__speaker-bio" *ngIf="randomSpeaker.about && !randomSpeaker.aboutJob"
+          [innerHTML]="randomSpeaker.about">
         </p>
       </div>
     </div>

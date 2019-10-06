@@ -83,6 +83,7 @@
   }
 
   &__content {
+    flex-wrap: wrap;
     margin-top: 50px;
     width: 100%;
     height: auto;
@@ -90,6 +91,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     &-item {
       display: flex;
@@ -100,16 +102,17 @@
       box-shadow: 5px 5px $dark;
       background-color: $light3;
       padding: 15px;
+      flex-wrap: wrap;
 
       &-time {
         font-size: 18px;
         font-weight: bolder;
-        flex-grow: 1;
+        min-width: 150px;
         margin-right: 10px;
       }
 
       &-details {
-        flex-grow: 4;
+        min-width: 200px;
 
         &-picture {
           height: 48px;
@@ -124,6 +127,7 @@
         }
 
         &-speaker {
+          margin-left: 15px;
           font-weight: normal;
           font-size: 18px;
         }
@@ -135,12 +139,14 @@
         &-header {
           display: flex;
           align-items: center;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: bold;
         }
 
         &-body {
           margin-top: 15px;
+          display: flex;
+          align-items: center;
         }
 
         &-footer {

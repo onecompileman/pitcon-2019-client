@@ -77,6 +77,11 @@
     flex-direction: column;
     color: $light;
 
+    &-speaker-job {
+      text-align: center;
+      font-size: 14px;
+    }
+
     &-container {
       width: 80%;
       display: flex;
@@ -98,16 +103,17 @@
       box-shadow: 5px 5px $dark;
       height: 280px;
       display: flex;
+      padding: 5px;
       flex-direction: column;
       align-items: center;
-
+      cursor: pointer;
     }
 
     &-speaker-picture {
       margin-top: 15px;
-      width: 70%;
+      width: 160px;
+      max-height: 160px;
       max-width: 220px;
-      height: 170px;
       overflow: hidden;
       border-radius: 100%;
     }

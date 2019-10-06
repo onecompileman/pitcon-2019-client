@@ -3,6 +3,8 @@ import { Countdown } from '../../shared/models/countdown.model';
 import { Observable, interval } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { differenceInSeconds } from 'date-fns';
+import { Speaker } from 'src/app/shared/models/speaker.model';
+import { Speakers } from 'src/app/shared/data/speakers.data';
 
 @Component({
   selector: 'pit-home',
@@ -13,6 +15,7 @@ export class HomeComponent implements OnInit {
 
   countdown$: Observable<Countdown>;
   targetDate = new Date('2019-11-17');
+  randomSpeaker: Speaker;
 
   constructor() { }
 
@@ -20,6 +23,7 @@ export class HomeComponent implements OnInit {
     this.countdown$ = interval(1000).pipe(
       map(() => this.getCountdown())
     );
+    this.randomSpeaker = Speakers[Math.ceil(Math.random() * Speakers.length)];
   }
 
   private getCountdown(): Countdown {

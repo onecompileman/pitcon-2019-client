@@ -75,21 +75,21 @@
     &-speaker-item {
       margin: 20px;
       width: 25%;
-      min-width: 250px;
+      min-width: 280px;
       background-color: $danger;
       box-shadow: 5px 5px $dark;
-      height: 280px;
+      height: 320px;
+      padding: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      cursor: pointer;
     }
 
     &-speaker-picture {
       margin-top: 15px;
-      width: 70%;
+      width: 160px;
       max-width: 220px;
-      height: 170px;
       overflow: hidden;
       border-radius: 100%;
     }
@@ -99,10 +99,16 @@
       width: 100%;
     }
 
+    &-speaker-job {
+      text-align: center;
+      font-size: 14px;
+    }
+
     &-speaker-name {
-      margin-top: 10px;
+      margin-top: 30px;
       font-size: 16px;
       font-weight: bold;
+      text-align: center;
     }
   }
 }

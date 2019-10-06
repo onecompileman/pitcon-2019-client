@@ -10,85 +10,15 @@
   </div>
   <div class="pit-speakers__body">
     <div class="pit-speakers__body-container">
-      <div class="pit-speakers__body-speaker-item" (click)="showSpeaker()">
+      <div class="pit-speakers__body-speaker-item" *ngFor="let speaker of speakers; let i = index;"
+        (click)="showSpeaker(speaker)">
         <div class="pit-speakers__body-speaker-picture">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-speakers__body-speaker-profile-picture">
+          <img [src]="speaker.imageUrl" [alt]="speaker.name" class="pit-speakers__body-speaker-profile-picture">
         </div>
-        <div class="pit-speakers__body-speaker-name">
-          Stephen Vinuya
+        <div class="pit-speakers__body-speaker-name" [innerHTML]="speaker.name | safeHtml">
         </div>
-        <div class="pit-speakers__body-speaker-job">
-          Team Lead at FFUF Manila | MVP
+        <div class="pit-speakers__body-speaker-job" [innerHTML]="speaker.jobTitle">
         </div>
-        <p>
-          <i class="fab fa-linkedin" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-facebook-square" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-twitter-square" style="color: #f0f0f0;"></i>
-        </p>
-      </div>
-      <div class="pit-speakers__body-speaker-item">
-        <div class="pit-speakers__body-speaker-picture">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-speakers__body-speaker-profile-picture">
-        </div>
-        <div class="pit-speakers__body-speaker-name">
-          Stephen Vinuya
-        </div>
-        <div class="pit-speakers__body-speaker-job">
-          Team Lead at FFUF Manila | MVP
-        </div>
-        <p>
-          <i class="fab fa-linkedin" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-facebook-square" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-twitter-square" style="color: #f0f0f0;"></i>
-        </p>
-      </div>
-      <div class="pit-speakers__body-speaker-item">
-        <div class="pit-speakers__body-speaker-picture">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-speakers__body-speaker-profile-picture">
-        </div>
-        <div class="pit-speakers__body-speaker-name">
-          Stephen Vinuya
-        </div>
-        <div class="pit-speakers__body-speaker-job">
-          Team Lead at FFUF Manila | MVP
-        </div>
-        <p>
-          <i class="fab fa-linkedin" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-facebook-square" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-twitter-square" style="color: #f0f0f0;"></i>
-        </p>
-      </div>
-      <div class="pit-speakers__body-speaker-item">
-        <div class="pit-speakers__body-speaker-picture">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-speakers__body-speaker-profile-picture">
-        </div>
-        <div class="pit-speakers__body-speaker-name">
-          Stephen Vinuya
-        </div>
-        <div class="pit-speakers__body-speaker-job">
-          Team Lead at FFUF Manila | MVP
-        </div>
-        <p>
-          <i class="fab fa-linkedin" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-facebook-square" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-twitter-square" style="color: #f0f0f0;"></i>
-        </p>
-      </div>
-      <div class="pit-speakers__body-speaker-item">
-        <div class="pit-speakers__body-speaker-picture">
-          <img src="assets/img/profile.png" alt="Stephen Vinuya" class="pit-speakers__body-speaker-profile-picture">
-        </div>
-        <div class="pit-speakers__body-speaker-name">
-          Stephen Vinuya
-        </div>
-        <div class="pit-speakers__body-speaker-job">
-          Team Lead at FFUF Manila | MVP
-        </div>
-        <p>
-          <i class="fab fa-linkedin" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-facebook-square" style="color: #f0f0f0;"></i>&nbsp;
-          <i class="fab fa-twitter-square" style="color: #f0f0f0;"></i>
-        </p>
       </div>
     </div>
   </div>
