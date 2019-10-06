@@ -9,9 +9,9 @@ export const Sessions: Session[] = [
     },
     {
         time: '9:00am - 10:00am',
-        title: 'Introduction: The Information Technology Master’s Guild: Building the local I.T. landscape step by step!',
+        title: 'Introduction: The Information Technology Master’s Guild',
         description: null,
-        speakerId: null
+        speakerId: 2
     },
     {
         time: '10:00am - 11:00am',
